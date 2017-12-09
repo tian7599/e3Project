@@ -11,5 +11,7 @@
 	
 	<dubbo:reference id="itemService"
 		interface="cn.e3.manager.service.ItemService" timeout="100000" retries="2"/>
+	<dubbo:reference id="itemCatService"
+		interface="cn.e3.manager.service.ItemCatService" timeout="100000" retries="2"/>
 
 </beans>
