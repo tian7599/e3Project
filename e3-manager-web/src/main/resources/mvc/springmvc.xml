@@ -18,7 +18,7 @@
 	http://www.springframework.org/schema/util
 	http://www.springframework.org/schema/util/spring-util-4.0.xsd">
 	
-	<context:property-placeholder location="classpath:url.properties"/>
+	<context:property-placeholder location="classpath:*.properties"/>
 	<!-- 扫描包结构 -->
 	<context:component-scan base-package="cn.e3.manager.controller"></context:component-scan>
 	<!-- 注解驱动 -->

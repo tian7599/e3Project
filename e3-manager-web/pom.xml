@@ -84,26 +84,10 @@
 			<artifactId>e3-manager-dao</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-		<!-- Mybatis -->
 		<dependency>
-			<groupId>org.mybatis</groupId>
-			<artifactId>mybatis</artifactId>
-			<version>${mybatis.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mybatis</groupId>
-			<artifactId>mybatis-spring</artifactId>
-			<version>${mybatis.spring.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.github.miemiedev</groupId>
-			<artifactId>mybatis-paginator</artifactId>
-			<version>${mybatis.paginator.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.github.pagehelper</groupId>
-			<artifactId>pagehelper</artifactId>
-			<version>${pagehelper.version}</version>
+			<groupId>cn.e3mall</groupId>
+			<artifactId>e3-content-interface</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>cn.e3mall</groupId>

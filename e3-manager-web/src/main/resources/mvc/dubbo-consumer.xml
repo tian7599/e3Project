@@ -9,9 +9,20 @@
 	<!-- 使用dubbo通过zookeeper订阅服务 -->
 	<dubbo:registry  address="zookeeper://192.168.62.156:2181"/>
 	
+	<!-- 商品服务 -->
 	<dubbo:reference id="itemService"
 		interface="cn.e3.manager.service.ItemService" timeout="100000" retries="2"/>
+	<!-- 商品类别服务 -->
 	<dubbo:reference id="itemCatService"
 		interface="cn.e3.manager.service.ItemCatService" timeout="100000" retries="2"/>
+	<!-- 商品参数服务 -->
+	<dubbo:reference id="itemParamService"
+		interface="cn.e3.manager.service.ItemParamService" timeout="100000" retries="2"/>
+	<!-- 广告分类服务 -->
+	<dubbo:reference id="contentCatagoryService"
+		interface="cn.e3.content.service.ContentCatagoryService" timeout="100000" retries="2"/>
+	<!-- 广告内容服务 -->
+	<dubbo:reference id="contentService"
+		interface="cn.e3.content.service.ContentService" timeout="100000" retries="2"/>
 
 </beans>
