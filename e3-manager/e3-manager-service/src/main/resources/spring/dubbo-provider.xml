@@ -42,4 +42,10 @@
 	<!-- 和本地bean一样实现服务 -->
 	<bean id="itemCatServiceImpl" class="cn.e3.manager.service.impl.ItemCatServiceImpl" />
 	
+	<!-- 发布服务 -->
+	<dubbo:service interface="cn.e3.manager.service.ItemParamService"
+		ref="itemParamServiceImpl" />
+	<!-- 和本地bean一样实现服务 -->
+	<bean id="itemParamServiceImpl" class="cn.e3.manager.service.impl.ItemParamServiceImpl" />
+	
 </beans>
