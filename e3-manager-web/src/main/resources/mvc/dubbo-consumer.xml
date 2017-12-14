@@ -24,5 +24,8 @@
 	<!-- 广告内容服务 -->
 	<dubbo:reference id="contentService"
 		interface="cn.e3.content.service.ContentService" timeout="100000" retries="2"/>
+	<!-- 搜索服务 -->
+	<dubbo:reference id="searchItemService"
+		interface="cn.e3.search.service.SearchItemService" timeout="100000" retries="2"/>
 
 </beans>
