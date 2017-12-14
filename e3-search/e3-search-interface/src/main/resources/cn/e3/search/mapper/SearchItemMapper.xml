@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.e3.search.mapper.SearchItemMapper">
+	<select id="findDatabaseToSolrIndex" resultType="SearchItem">
+		SELECT
+		  a.id,
+		  a.title,
+		  a.sell_point,
+		  a.price,
+		  a.image,
+		  b.item_desc,
+		  c.name category_name
+		FROM tb_item a,
+		  tb_item_desc b,
+		  tb_item_cat c
+		WHERE a.id = b.item_id
+		    AND a.cid = c.id
+		    AND a.status = 1
+	</select>
+</mapper>
