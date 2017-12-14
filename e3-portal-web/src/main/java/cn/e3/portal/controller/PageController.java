@@ -24,7 +24,7 @@ public class PageController {
 	
 	
 	/**
-	 * 需求:前台页面跳转
+	 * 需求:前台页面跳转,同时查询并回显大广告
 	 */
 	@RequestMapping("index")
 	public String showIndex(Model model){
